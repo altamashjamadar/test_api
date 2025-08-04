@@ -60,32 +60,27 @@ class _GameScreenState extends State<GameScreen> {
     });
   }
 
-  // Check if current player wins
   bool checkWinner() {
     var b = board;
 
-    // Rows
     for (int i = 0; i < 3; i++) {
       if (b[i][0] == b[i][1] && b[i][1] == b[i][2] && b[i][0] != null) return true;
     }
 
-    // Columns
     for (int j = 0; j < 3; j++) {
       if (b[0][j] == b[1][j] && b[1][j] == b[2][j] && b[0][j] != null) return true;
     }
 
-    // Diagonals
     if (b[0][0] == b[1][1] && b[1][1] == b[2][2] && b[0][0] != null) return true;
     if (b[0][2] == b[1][1] && b[1][1] == b[2][0] && b[0][2] != null) return true;
 
     return false;
   }
 
-  // Get winning positions for animation
+ 
   List<List<int>> getWinningLine() {
     var b = board;
 
-    // Rows
     for (int i = 0; i < 3; i++) {
       if (b[i][0] == b[i][1] && b[i][1] == b[i][2] && b[i][0] != null) {
         return [[i, 0], [i, 1], [i, 2]];
