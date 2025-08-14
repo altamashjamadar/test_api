@@ -1,28 +1,3 @@
-// import 'package:flutter/material.dart';
-// import 'package:get/get.dart';
-
-// void main() {
-//   runApp(BirthdayApp());
-// }
-
-// class BirthdayApp extends StatelessWidget {
-//   const BirthdayApp({super.key});
-
-//   @override
-//   Widget build(BuildContext context) {
-//     return GetMaterialApp(
-//       debugShowCheckedModeBanner: false,
-//       theme: ThemeData(
-//         primarySwatch: Colors.pink,
-//         scaffoldBackgroundColor: Colors.white,
-//       ),
-//       home: SplashScreen(),
-//     );
-//   }
-// }
-
-
-
 import 'dart:convert';
 
 import 'package:flutter/material.dart';
